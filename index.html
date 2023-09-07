@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Marcel Hauf Profil</title>
+    <style type="text/css">
+        /* Layout */
+        .container {
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .is-2 {
+            flex: 2;
+        }
+
+        .is-4 {
+            flex: 4;
+        }
+
+        .is-8 {
+            flex: 8;
+        }
+
+        /* styling */
+        :root {
+            color-scheme: light dark;
+            --blue: #3465a4;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: rgb(232, 230, 227)
+            }
+        }
+
+
+        .block {
+            margin: 2rem 0rem 2rem 0rem;
+        }
+
+        .block h1 {
+            margin: 1rem 0rem 0.5rem 0rem;
+            color: var(--blue);
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spacer {
+            background-color: var(--blue);
+            height: 1rem;
+            width: 90%;
+            transform: translateY(0.4rem);
+            border-radius: 1rem 0 1rem 0;
+            margin-right: 4rem;
+        }
+
+        .project {
+            margin: 1rem 0;
+        }
+
+        .project h2 {
+            margin: 0.5rem 0 0 0;
+            color: var(--blue);
+        }
+
+        .project h3 {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.25rem;
+        }
+
+        .project-desc {
+            margin: 0.75rem 0 0.5rem 0;
+        }
+
+        .project-desc>p {
+            margin: 1rem 0 1rem 0;
+        }
+
+        .profile-title {
+            font-size: 4.5rem;
+        }
+
+        .profile-subtitle {
+            color: #3465a4;
+            margin: 1rem 0 0 0;
+        }
+
+        .profile-pic {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-pic>img {
+            border: 1rem solid transparent;
+            border-radius: 100%;
+
+            background: radial-gradient(circle at center, transparent 68%, var(--blue) 30%) border-box;
+            transform: translateY(1rem);
+
+            width: 12rem;
+        }
+
+        .personal .row,
+        .skill .row,
+        .certificate .row {
+            margin: 0.3rem 0;
+        }
+    </style>
+</head>
+
+<body lang="de-DE" dir="ltr">
+    <div class="container column">
+        <div class="row">
+            <div class="column is-2 profile-pic">
+                <img src="marcel-hauf-foto.1024x1024.jpg">
+            </div>
+            <div class="column is-8">
+                <h1 class="profile-title">
+                    Marcel Hauf
+                </h1>
+                <h3 class="profile-subtitle">
+                    Hands on AWS Solutions Architect mit Software Entwicklung in Goland, Rust und TypeScript
+                </h3>
+            </div>
+        </div>
+        <div class="block personal">
+            <div class="row">
+                <div class="column center">
+                    <div class="spacer"></div>
+                </div>
+                <div class="column">
+                    <h1>Persönliche Daten</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Name</div>
+                <div class="column">Marcel Hauf</div>
+            </div>
+            <div class="row">
+                <div class="column">Wohnort</div>
+                <div class="column"><a href="https://www.openstreetmap.org/relation/62400">Frankfurt am Main</a></div>
+            </div>
+            <div class="row">
+                <div class="column">Mobilnummer</div>
+                <div class="column">+49 1769 6900989</div>
+            </div>
+            <div class="row">
+                <div class="column">E-Mail-Adresse</div>
+                <div class="column"><a href="mailto:business@marcelhauf.name">business@marcelhauf.name</a></div>
+            </div>
+            <div class="row">
+                <div class="column">Website</div>
+                <div class="column"><a href="https://marcelhauf.name">marcelhauf.name</a></div>
+            </div>
+            <div class="row">
+                <div class="column">XING</div>
+                <div class="column">
+                    <a href="https://xing.com/profile/Marcel_Hauf">xing.com/profile/Marcel_Hauf</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Github</div>
+                <div class="column">
+                    <a href="https://github.com/marshauf">github.com/marshauf</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block skill">
+            <div class="row">
+                <div class="column center">
+                    <div class="spacer"></div>
+                </div>
+                <div class="column">
+                    <h1>Kompetenzen</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Clouds</div>
+                <div class="column">AWS, GCP</div>
+            </div>
+            <div class="row">
+                <div class="column">Infrastructure as Code</div>
+                <div class="column">Terraform, AWS CDK, CloudFormation, Helm, Chef</div>
+            </div>
+            <div class="row">
+                <div class="column">Container</div>
+                <div class="column">Kubernetes, AWS ECS, GCP Cloud Run, Docker</div>
+            </div>
+            <div class="row">
+                <div class="column">Monitoring</div>
+                <div class="column">OpenTelemetry, Instana, Grafana, Prometheus, Graylog</div>
+            </div>
+            <div class="row">
+                <div class="column">DevTools</div>
+                <div class="column">Gitlab, Github, Jira, Confluence</div>
+            </div>
+            <div class="row">
+                <div class="column">Datenbank, MessageBroker</div>
+                <div class="column">SQLite, PostgreSQL, DynamoDB, Kafka, SQS, PubSub</div>
+            </div>
+            <div class="row">
+                <div class="column">Programmiersprachen</div>
+                <div class="column">Golang, Rust, SQL, TypeScript, JavaScript, C#, Java</div>
+            </div>
+            <div class="row">
+                <div class="column">Cloud Architektur</div>
+                <div class="column">Cloud/Software-Architektur, CI/CD/CT-Prozesse, REST, GraphQL</div>
+            </div>
+            <div class="row">
+                <div class="column">Projektmanagement</div>
+                <div class="column">Scrum, Kanban, SAFe</div>
+            </div>
+            <div class="row">
+                <div class="column">Sprachen</div>
+                <div class="column">Deutsch und Englisch in Wort und Schrift</div>
+            </div>
+        </div>
+
+        <div class="block certificate">
+            <div class="row">
+                <div class="column center">
+                    <div class="spacer"></div>
+                </div>
+                <div class="column">
+                    <h1>Zertifizierungen</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Mai 2023</div>
+                <div class="column">
+                    <a href="TODO Insert link to certificate">AWS Certified Solutions Architect – Associate
+                        (SAA-C03)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Juni 2023</div>
+                <div class="column"> <a href="TODO Insert link to certificate">HashiCorp Certified: Terraform Associate
+                        (003)</a></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <div class="column center">
+                    <div class="spacer"></div>
+                </div>
+                <div class="column">
+                    <h1>Tätigkeiten</h1>
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    OpenSource & Produktentwicklung
+                </h2>
+                <h3>
+                    Mai 2022 - fortlaufend
+                </h3>
+                <div class="project-desc">
+                    Entwicklung einer asynchronen, Stream basierten SQL Query Engine in Rust zur Anbindung von
+                    unterschiedlichen Systemen. Integration von OpenTelemetry für die Überwachung von Datenströmen
+                    zwischen Systemen. Veröffentlichung einzelner Komponenten als OpenSource Pakete auf crates.io.
+                    Bauen, Testen und Veröffentlichen erfolgt mit Hilfe von Github Actions.
+                </div>
+            </div>
+
+
+            <div class="column project">
+                <h2>
+                    CHI Deutschland Cargo Handling GmbH
+                </h2>
+                <h3>
+                    Oktober 2022 – April 2023
+                </h3>
+                <div class="project-desc">
+                    <p>
+                        Anbindung von Kunden- und Dienstleister-Systemen an interne Systeme. Die Anbindung wurde mit in
+                        Go geschriebenen Anwendungen und Google Cloud Platform Servicen realisiert. Daten werden in
+                        Queues und ObjectStores bis zur einer erfolgreichen Verarbeitung zwischen gespeichert.
+                    </p>
+                    <p>
+                        Anfragen an Systeme werden mit OpenTelemetry überwacht und laufen als Logs, Metriken und Traces
+                        in GCP ein.
+                        Die Anwendungen werden als Docker Container oder per Packer Image verpackt. Das Lieferartefakt
+                        wird per Terraform in GCP ausgerollt. Team Kommunikations-Modell mit Scrum.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    DB Systel GmbH
+                </h2>
+                <h3>
+                    September 2020 – April 2022
+                </h3>
+                <div class="project-desc">
+                    <p>
+                        Betrieb von zwei AWS Accounts mit Kundenbetreuung, Architektur, Umsetzung und Rufbereitschaft.
+                        Kundensoftware lief hochverfügbar und ausfallsicher in Kubernetes Cluster, ECS Clustern, auf EC2
+                        Instanzen via ASGs und Serverless mit Lambda. Infrastruktur wurde per AWS CDK,
+                        SparkleFormation, CloudFormation, Helm oder OpsWorks (Chef) definiert.
+                    </p>
+                    <p>
+                        CI/CD/CT Pipelines wurden für ein selbst betriebenes Gitlab definiert. Compliance Checks und
+                        Security Scans mit Trivy,
+                        ECR Container Scanning und AWS Config.
+                        Softwaredesign und Entwicklung in Go und TypeScript für eine Business Integrations Software.
+                        Team
+                        Organisation unter Zuhilfenahme eines Kanbanboards.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    DB Systel GmbH
+                </h2>
+                <h3>
+                    April 2020 – September 2020
+                </h3>
+                <div class="project-desc">
+                    Entwicklung von Chef Infra Client Rezepten in Ruby für on-premise, edge Computing Ressourcen.
+                    Konzeption einer Migration von Chef Infra Client im local Modus zum Client-Server Modus.
+                    Definieren von AWS Ressourcen mit SparkleFormation. Anpassungen von Software-Komponenten in
+                    Java und Python. Das Team wurde via Jira, Confluence, Gitlab und Jenkins über Scrum organisiert.
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    DB Vertrieb GmbH
+                </h2>
+                <h3>
+                    Januar 2019 – März 2020
+                </h3>
+                <div class="project-desc">
+                    <p>
+                        Umsetzung von Middleware-Diensten zur Anbindung einer neuen mobilen Vertriebs-Applikation an
+                        eine konzernweite Vertriebsstruktur.
+                        Die Dienste wurde in einem OpenShift-Cluster in AWS betrieben und später nach EKS migriert.
+                        Lieferartefakte wurden mit SonarQube überprüft und im Betrieb mit Instana, Grafana und Graylog
+                        überwacht.
+                    </p>
+                    <p>
+                        Migration der Middleware-Dienste von Java (JVM) zu TypeScript/JavaScript (Node.js).
+                        Organisiert wurde mit Hilfe von Jira, Confluence, Gitlab, Jenkins im Modell SAFe und Scrum. </p>
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    AIDA Cruises
+                </h2>
+                <h3>
+                    November 2016 – Dezember 2018
+                </h3>
+                <div class="project-desc">
+                    <p>
+                        Architektur und Entwicklung von hoch skalierbaren und hoch verfügbaren Backendsystemen mit AWS
+                        Lambda, API Gateway, DynamoDB, CloudFront und S3. Migration von on-premise Servern in die
+                        AWS-Cloud.
+                        Entwicklung von Terraform-Modulen für automatisiertes Bereitstellen von Ressourcen in AWS und
+                        Github für Frontend und Backend CI/CD Pipelines.
+                    </p>
+                    <p>
+                        Fullstack Entwicklung in TypeScript mit dem Serverless Framework und Vue.js. Im Team wurde mit
+                        Scrum organisiert.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column project">
+                <h2>
+                    N-fuse GmbH
+                </h2>
+                <h3>
+                    April 2016 – September 2016
+                </h3>
+                <div class="project-desc">
+                    Migration eines JavaScript CMS Monolith zu einer Microservice Architektur. Design und Entwicklung
+                    eines JavaScript Microservice Framework welches mit gRPC und Kafka kommuniziert.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
